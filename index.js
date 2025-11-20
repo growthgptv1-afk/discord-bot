@@ -14,7 +14,7 @@ client.once("ready", () => {
 });
 
 client.on("messageCreate", (message) => {
-  if (message.author.bot) return; // IMPORTANT FIX
+  if (message.author.bot) return;
 
   if (message.content.toLowerCase() === "ping") {
     message.reply("Pong!");
